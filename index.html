@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>K10DASH</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!--  NAVBAR -->
+        <aside class="navbar">
+
+            <div class="nallog">
+                <div class="log">
+                    <img src="images/icons8-disposition-du-tableau-de-bord-48.png" alt="Logo K10DASH">
+                    <h2>K10DASH</h2>
+                </div>
+                <div class="close" id="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <nav class="siderbar">
+                <a href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <h2>Dashboard</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Customers</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-city"></i>
+                    <h2>Orders</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-duotone fa-solid fa-chart-simple"></i>
+                    <h2>Analytic</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-message"></i>
+                    <h2>Message</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-industry"></i>
+                    <h2>Products</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-file"></i>
+                    <h2>Reports</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Setting</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-plus"></i>
+                    <h2>Add products</h2>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <h2>Sign Out</h2>
+                </a>
+            </nav>
+
+        </aside>
+
+        <!--  CONTENU PRINCIPAL-->
+        <main>
+
+            <!-- En-tête de page -->
+            <header class="presentation">
+                <div class="titre">
+                    <i class="fa-solid fa-bars burger" id="burgerBtn"></i>
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="date">
+                    <input type="date" name="date_actuelle" id="dateAct">
+                </div>
+            </header>
+
+            <!-- Bloc statistiques -->
+            <section class="statistique">
+
+                <!-- Carte : Total Solde -->
+                <article class="card totalSolde">
+                    <div class="totalicon1">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div>
+                    <div class="midele">
+                        <div class="left">
+                            <h3>Total Solde</h3>
+                            <p class="montant">200.000 FCFA</p>
+                        </div>
+                        <div class="cercle">
+                            <svg viewBox="0 0 80 80">
+                                <circle class="track" cx="38" cy="38" r="34"></circle>
+                                <circle class="progress" cx="38" cy="38" r="34" style="--value:72"></circle>
+                            </svg>
+                            <span class="cercle-label">72%</span>
+                        </div>
+                    </div>
+                    <div class="litele_texte">
+                        <p>les dernières 24 heures</p>
+                    </div>
+                </article>
+
+                <!-- Carte : Total Dépenses -->
+                <article class="card totalExpeces">
+                    <div class="totalicon2">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <div class="midele">
+                        <div class="left">
+                            <h3>Total Depenses</h3>
+                            <p class="montant">200.000 FCFA</p>
+                        </div>
+                        <div class="cercle">
+                            <svg viewBox="0 0 80 80">
+                                <circle class="track" cx="38" cy="38" r="34"></circle>
+                                <circle class="progress progress-danger" cx="38" cy="38" r="34" style="--value:45"></circle>
+                            </svg>
+                            <span class="cercle-label">45%</span>
+                        </div>
+                    </div>
+                    <div class="litele_texte">
+                        <p>les dernières 24 heures</p>
+                    </div>
+                </article>
+
+                <!-- Carte : Total Interne -->
+                <article class="card totalInterne">
+                    <div class="totalicon3">
+                        <i class="fa-solid fa-arrow-up-right-dots"></i>
+                    </div>
+                    <div class="midele">
+                        <div class="left">
+                            <h3>Total Interne</h3>
+                            <p class="montant">200.000 FCFA</p>
+                        </div>
+                        <div class="cercle">
+                            <svg viewBox="0 0 80 80">
+                                <circle class="track" cx="38" cy="38" r="34"></circle>
+                                <circle class="progress progress-success" cx="38" cy="38" r="34" style="--value:88"></circle>
+                            </svg>
+                            <span class="cercle-label">88%</span>
+                        </div>
+                    </div>
+                    <div class="litele_texte">
+                        <p>les dernières 24 heures</p>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
